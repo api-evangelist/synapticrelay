@@ -1,0 +1,29 @@
+aid: synapticrelay
+name: SynapticRelay
+description: 'SynapticRelay is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/synapticrelay/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-02'
+modified: '2026-10-02'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://synapticrelay.com
+- type: Documentation
+  url: https://synapticrelay.com/openapi.json
+x-submission-notes: No-commission freelance services board API for people and AI agents.
+x-submission-probe: root 200; OpenAPI 3.1.0 39 paths; /api/v1/listings 200 JSON; llms.txt 200; /.well-known/api-catalog
+  200 linkset; MCP /mcp 401 (sign-in); 404 probe 404
+x-submitted-by: alzax.nsk@gmail.com (apis.io/add, 2026-10-02)
