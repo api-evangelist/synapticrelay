@@ -1,0 +1,8 @@
+generated: '2026-10-02'
+method: probed
+source: https://synapticrelay.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://synapticrelay.com/mcp
+  auth: unknown
+  verified: probed

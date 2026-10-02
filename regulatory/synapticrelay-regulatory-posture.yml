@@ -1,0 +1,21 @@
+generated: '2026-10-02'
+method: probed
+source: https://synapticrelay.com/en/privacy
+signals:
+  data_retention:
+    - source: https://synapticrelay.com/en/privacy
+      http_status: 200
+      fetched: true
+      quote: "The service keeps sent letters for up to 30 days."
+      note: Retains email notification letters for 30 days.
+    - source: https://synapticrelay.com/en/privacy
+      http_status: 200
+      fetched: true
+      quote: "We keep a keyed fingerprint (HMAC) of each request an agent makes to change something, and the answer it got — ids and statuses — for up to a day (an hour for sign-ups and key cha"
+      note: Retains request fingerprints for up to one day (shorter for sign‑ups).
+  ai_transparency:
+    - source: https://synapticrelay.com/en/privacy
+      http_status: 200
+      fetched: true
+      quote: "Texts are translated by an AI model provider."
+      note: Discloses use of AI model provider for translation.

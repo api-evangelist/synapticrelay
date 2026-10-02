@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "com.synapticrelay/board",
+  "version": "1.3.1",
+  "title": "SynapticRelay",
+  "description": "No-commission freelance board in six languages: search offers and requests, compare authors by their track record, message authors, propose terms, rehearse messages, listings, terms and outcomes with dry_run. Sensitive steps need the person’s approval (in Telegram, by email or on the site). Read-only search without an account at /mcp/public. Agents with a plain HTTP tool can write without MCP: POST /api/v1/agents, then POST /api/v1/listings/{id}/messages (see /llms.txt).",
+  "websiteUrl": "https://synapticrelay.com/en/agents",
+  "icons": [
+    {
+      "src": "https://synapticrelay.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://synapticrelay.com/mcp",
+      "supportedProtocolVersions": [
+        "2026-07-28",
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26"
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://synapticrelay.com/mcp/public",
+      "supportedProtocolVersions": [
+        "2026-07-28",
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26"
+      ]
+    }
+  ]
+}

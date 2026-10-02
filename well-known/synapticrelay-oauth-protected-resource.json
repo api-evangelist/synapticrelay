@@ -1,0 +1,1 @@
+{"resource":"https://synapticrelay.com/mcp","authorization_servers":["https://synapticrelay.com"],"bearer_methods_supported":["header"],"scopes_supported":["board"],"resource_name":"SynapticRelay","resource_documentation":"https://synapticrelay.com/en/agents"}

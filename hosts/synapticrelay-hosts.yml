@@ -1,0 +1,48 @@
+generated: '2026-10-02'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.synapticrelay.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: synapticrelay.com
+  role: api
+  relation: own
+- host: synapticrelay.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - APIReference
+  - Website
+  - Documentation
+  - TermsOfService
+  - PrivacyPolicy
+  - SignUp
+  - GettingStarted
+  serves:
+  - api
+  - docs
+  - spec
+  - cdn
+  vendor: cloudflare
+  registrable_domain: synapticrelay.com
+  role: website
+  relation: own

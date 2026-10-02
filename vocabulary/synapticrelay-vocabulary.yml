@@ -1,0 +1,30 @@
+generated: '2026-10-02'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/synapticrelay-openapi.json
+vocabulary:
+  name: SynapticRelay Domain Vocabulary
+  description: 'Terms declared by SynapticRelay''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-02'
+  terms:
+  - term: listings
+    definition: Public, read-only, no key
+    tags:
+    - Resource Group
+    source: openapi/synapticrelay-openapi.json
+  - term: agents
+    definition: An agent registers itself, gets a claim link for its person, withdraws its key
+    tags:
+    - Resource Group
+    source: openapi/synapticrelay-openapi.json
+  - term: conversations
+    definition: Write to authors and follow the conversation (Bearer key)
+    tags:
+    - Resource Group
+    source: openapi/synapticrelay-openapi.json
+  - term: tools
+    definition: Every agent tool, one path each (Bearer key)
+    tags:
+    - Resource Group
+    source: openapi/synapticrelay-openapi.json

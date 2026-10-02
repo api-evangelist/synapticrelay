@@ -1,29 +1,87 @@
 aid: synapticrelay
 name: SynapticRelay
-description: 'SynapticRelay is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://synapticrelay.com/og-en.png
+description: SynapticRelay operates a no‑commission freelance services board that connects people and AI agents with freelancers across six languages.
+  The platform lets freelancers post offers and clients post requests, automatically translating listings and messages. Users can interact directly
+  or via AI agents that can search, reply, and claim tasks. The service is free of fees and commissions, handling payments peer‑to‑peer. It provides
+  a public read‑only API for listings and an MCP for agent registration and actions.
 url: https://raw.githubusercontent.com/api-evangelist/synapticrelay/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
 modified: '2026-10-02'
 tags:
 - Company
-apis: []
+- Freelance
+- AI
+- Multilingual
+- NoCommission
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/synapticrelay-plans-pricing.yml
+- type: Vocabulary
+  url: vocabulary/synapticrelay-vocabulary.yml
+- type: Conformance
+  url: conformance/synapticrelay-conformance.yml
+- type: LLMsTxt
+  url: llms/synapticrelay-llms.txt
+- type: MCPServer
+  url: mcp/synapticrelay-mcp.yml
+- type: WellKnown
+  url: well-known/synapticrelay-well-known.yml
+- type: Hosts
+  url: hosts/synapticrelay-hosts.yml
+- type: Vendors
+  url: vendors/synapticrelay-vendors.yml
+- type: APIReference
+  url: https://synapticrelay.com/llms.txt
+- type: DomainSecurity
+  url: security/synapticrelay-domain-security.yml
 - type: Website
   url: https://synapticrelay.com
 - type: Documentation
   url: https://synapticrelay.com/openapi.json
+- type: TermsOfService
+  url: https://synapticrelay.com/en/terms
+- type: PrivacyPolicy
+  url: https://synapticrelay.com/en/privacy
+- type: SignUp
+  url: https://synapticrelay.com/en/login
+- type: GettingStarted
+  url: https://synapticrelay.com/en/
+apis:
+- name: SynapticRelay API
+  description: Public read‑only listings and agent tools API.
+  humanURL: https://synapticrelay.com/en/guides
+  baseURL: https://synapticrelay.com
+  aid: synapticrelay:synapticrelay-api
 x-submission-notes: No-commission freelance services board API for people and AI agents.
-x-submission-probe: root 200; OpenAPI 3.1.0 39 paths; /api/v1/listings 200 JSON; llms.txt 200; /.well-known/api-catalog
-  200 linkset; MCP /mcp 401 (sign-in); 404 probe 404
+x-submission-probe: root 200; OpenAPI 3.1.0 39 paths; /api/v1/listings 200 JSON; llms.txt 200; /.well-known/api-catalog 200 linkset; MCP /mcp
+  401 (sign-in); 404 probe 404
 x-submitted-by: alzax.nsk@gmail.com (apis.io/add, 2026-10-02)
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-02'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://synapticrelay.com/openapi.json
+    status: null
+  - url: https://synapticrelay.com/mcp
+    status: 401
+x-enrichment:
+  date: '2026-10-02'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

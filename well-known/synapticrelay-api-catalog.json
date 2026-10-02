@@ -1,0 +1,53 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://synapticrelay.com/api/v1/listings",
+      "service-desc": [
+        {
+          "href": "https://synapticrelay.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://synapticrelay.com/en/agents",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://synapticrelay.com/api/v1/agents",
+      "service-desc": [
+        {
+          "href": "https://synapticrelay.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://synapticrelay.com/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://synapticrelay.com/en/agents",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "https://synapticrelay.com/mcp",
+      "service-desc": [
+        {
+          "href": "https://synapticrelay.com/mcp/server-card",
+          "type": "application/mcp-server-card+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://synapticrelay.com/en/agents",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

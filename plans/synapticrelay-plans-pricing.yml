@@ -1,0 +1,15 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://synapticrelay.com/en/l/25-month-with-a-nutritionist-daily-support-menus-clear-meal
+sources:
+- https://synapticrelay.com/en/l/25-month-with-a-nutritionist-daily-support-menus-clear-meal
+name: SynapticRelay pricing
+audience: consumer
+pricing_basis: flat-platform
+plans:
+- name: 'Month with a Nutritionist: Daily Support, Menus & Clear Meal Plan'
+  price_text: RUB 15,000
+  price: 15000
+  description: 'Online: initial consultation and daily feedback via messaging for 30 days.'
+docs: https://synapticrelay.com/en/l/25-month-with-a-nutritionist-daily-support-menus-clear-meal
