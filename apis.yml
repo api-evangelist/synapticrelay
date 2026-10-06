@@ -12,7 +12,7 @@ x-tier: profiled
 x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
-modified: '2026-10-02'
+modified: '2026-10-06'
 tags:
 - Company
 - Freelance
@@ -31,6 +31,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://synapticrelay.com/en/feed.xml
+  type: BlogRSS
 - type: Plans
   url: plans/synapticrelay-plans-pricing.yml
 - type: Vocabulary
