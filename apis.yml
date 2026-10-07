@@ -31,6 +31,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://synapticrelay.com/en/l/25-month-with-a-nutritionist-daily-support-menus-clear-meal
 - url: https://synapticrelay.com/en/feed.xml
   type: BlogRSS
 - type: Plans
